@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
     `
       h3 {
         color: red;
+        background-color: rgb(218, 127, 127);
+        padding: 20px;
       }
     `,
   ],
