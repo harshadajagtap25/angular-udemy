@@ -1,10 +1,7 @@
-<label>Change Server Name  : event binding </label>
-<input type="text" class="form-control" 
-(input)="onUpdate($event)" />
-<label>Change Server Name  : two way binding </label>
-<input type="text" class="form-control" 
-[(ngModel)] ="serverName" 
-/>
+<!-- <label>Change Server Name : event binding </label>
+<input type="text" class="form-control" (input)="onUpdate($event)" />
+<label>Change Server Name : two way binding </label>
+<input type="text" class="form-control" [(ngModel)]="serverName" />
 <p>{{ serverName }}</p>
 <button
   class="btn btn-primary"
@@ -13,6 +10,23 @@
 >
   Add server
 </button>
-<p [innerText]="serverCreationStatus"></p>
+<p [innerText]="serverCreationStatus"></p> -->
+
+<h3>Directives : ngIf</h3>
+
+<input type="text" class="form-control" [(ngModel)]="servername2" />
+<button
+  (click)="onSecondServerCreated()"
+  [disabled]="!allowNewServer"
+  class="btn btn-primary"
+>
+  Add server again
+</button>
+<p *ngIf="serverCreated2; else noServer">
+  Second server name is {{ servername2 }}
+</p>
+<ng-template #noServer>
+  <p>No server created</p>
+</ng-template>
 
 <app-server></app-server>
