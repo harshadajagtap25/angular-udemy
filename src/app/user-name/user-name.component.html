@@ -1,0 +1,13 @@
+<h3>Username Component</h3>
+<label>Username Change</label>
+<input type="text" [(ngModel)]="username" class="form-control" />
+
+<p>{{ username }}</p>
+
+<button
+  (click)="onReset()"
+  class="btn btn-primary"
+  [disabled]="username.length <= 0"
+>
+  Reset
+</button>

@@ -19,7 +19,7 @@ export class ServersComponent implements OnInit {
   ngOnInit(): void {}
 
   onCreateServer() {
-    this.serverCreationStatus = 'Server created';
+    this.serverCreationStatus = 'Server created! Name is ' +this.serverName;
   }
 
   onUpdate(event: any) {
