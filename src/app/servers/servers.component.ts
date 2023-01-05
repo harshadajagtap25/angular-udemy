@@ -11,6 +11,7 @@ export class ServersComponent implements OnInit {
   serverName = 'Testing purpose';
   servername2 = '';
   serverCreated2 = false;
+  serverArray = ['test1', 'test2'];
 
   constructor() {
     setTimeout(() => {
@@ -21,6 +22,7 @@ export class ServersComponent implements OnInit {
   ngOnInit(): void {}
 
   onCreateServer() {
+    this.serverArray.push(this.serverName)
     this.serverCreationStatus = 'Server created! Name is ' + this.serverName;
   }
 
