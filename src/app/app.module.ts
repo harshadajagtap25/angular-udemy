@@ -10,6 +10,10 @@ import { UserNameComponent } from './user-name/user-name.component';
 import { AssignmentComponent } from './assignment/assignment.component';
 import { BasicHighlightDirective } from './basic-directive/basic-highlight.directive';
 import { BetterHighlightDirective } from './better-highlight/better-highlight.directive';
+import { EmployeeListComponent } from './employee-list/employee-list.component';
+import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
+import { EmployeeComponent } from './employee/employee.component';
+import { EmployeeServiceService } from './services/employee-service.service';
 
 @NgModule({
   declarations: [
@@ -21,10 +25,13 @@ import { BetterHighlightDirective } from './better-highlight/better-highlight.di
     UserNameComponent,
     AssignmentComponent,
     BasicHighlightDirective,
-    BetterHighlightDirective
+    BetterHighlightDirective,
+    EmployeeListComponent,
+    EmployeeDetailsComponent,
+    EmployeeComponent
   ],
   imports: [BrowserModule, FormsModule],
-  providers: [],
+  providers: [EmployeeServiceService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
