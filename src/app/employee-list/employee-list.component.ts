@@ -8,10 +8,15 @@ import { EmployeeServiceService } from '../services/employee-service.service';
 })
 export class EmployeeListComponent implements OnInit {
   public employee = [];
+  title= 'Employee List';
 
   constructor(private _emp: EmployeeServiceService) {}
 
   ngOnInit() {
     this.employee = this._emp.getEmployeeData();
+  }
+  assignTitle() {
+    const assignTitle = new EmployeeServiceService();
+    assignTitle.getTitle(this.title);
   }
 }

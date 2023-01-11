@@ -1,5 +1,7 @@
 <h3>Employee List</h3>
 <div>
+  <button (click)="assignTitle()">Get Title</button>
+
   <ul *ngFor="let empl of employee">
     <li>{{ empl.name }}</li>
   </ul>

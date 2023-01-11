@@ -12,4 +12,7 @@ export class EmployeeServiceService {
       { id: 3, name: 'lakshuman' },
     ];
   }
+  getTitle(title: string) {
+    alert('Title of that particular Component i.e. ' + title);
+  }
 }
