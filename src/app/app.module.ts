@@ -9,6 +9,7 @@ import { SuccessAlertComponent } from './success-alert/success-alert.component';
 import { UserNameComponent } from './user-name/user-name.component';
 import { AssignmentComponent } from './assignment/assignment.component';
 import { BasicHighlightDirective } from './basic-directive/basic-highlight.directive';
+import { BetterHighlightDirective } from './better-highlight/better-highlight.directive';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { BasicHighlightDirective } from './basic-directive/basic-highlight.direc
     UserNameComponent,
     AssignmentComponent,
     BasicHighlightDirective,
+    BetterHighlightDirective
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],
