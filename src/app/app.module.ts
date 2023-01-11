@@ -8,6 +8,7 @@ import { WarningAlertComponent } from './warning-alert/warning-alert.component';
 import { SuccessAlertComponent } from './success-alert/success-alert.component';
 import { UserNameComponent } from './user-name/user-name.component';
 import { AssignmentComponent } from './assignment/assignment.component';
+import { BasicHighlightDirective } from './basic-directive/basic-highlight.directive';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { AssignmentComponent } from './assignment/assignment.component';
     SuccessAlertComponent,
     UserNameComponent,
     AssignmentComponent,
+    BasicHighlightDirective,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],
